@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FONTES DO SITE */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background: white;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* ================= HEADER (mantido) ================= */
+
+.header {
+    background-color: #f8e0e3;
+    padding: 15px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 80px;
+    margin-left: -40px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.menu a:hover,
+.menu .active {
+    color: #d17084;
+}
+
+#menu-check {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* ================= BANNER ================= */
+
+.banner {
+    position: relative;
+    height: 75vh;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.overlay h1 {
+    font-size: 3rem;
+}
+
+.overlay p {
+    font-size: 1rem;
+}
+
+/* ================= ATELIÊ ================= */
+
+.atelie {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.atelie h2 {
+    font-size: 2rem;
+}
+
+.atelie .sub {
+    color: #777;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.linha {
+    width: 50px;
+    height: 3px;
+    background: #e89cae;
+    margin: 15px auto 40px;
+    border-radius: 10px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 15px;
+    transition: .4s;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+}
+
+/* ================= EVENTOS ================= */
+
+.topo {
+    text-align: center;
+    margin: 60px 20px 40px;
+}
+
+/* MESMO TAMANHO DO ATELIÊ */
+.topo h1 {
+    font-size: 2rem;
+}
+
+.topo p {
+    color: #777;
+    font-size: 1rem;
+}
+
+.grid {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.info {
+    padding: 22px;
+}
+
+.data {
+    color: #999;
+    font-size: 13px;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.lerMais {
+    color: #e85a7d;
+    margin-top: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: .3s;
+}
+
+/* icone */
+.lerMais span {
+    font-size: 18px;
+    transition: .3s;
+}
+
+/* animação hover bonita */
+.lerMais:hover {
+    gap: 10px;
+    color: #d17084;
+}
+
+/* ================= MODAL ================= */
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s;
+}
+
+.modal.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalContent {
+    background: #fff;
+    max-width: 700px;
+    width: 90%;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    animation: zoom .4s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(.7);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.modalContent img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.modalText {
+    padding: 25px;
+}
+
+.voltar {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .15);
+    transition: .3s;
+}
+
+/* icone */
+.voltar span {
+    font-size: 22px;
+    color: #d17084;
+}
+
+/* hover bonito */
+.voltar:hover {
+    transform: scale(1.1);
+    background: #fce6ea;
+}
+
+/* ================= RESPONSIVO ================= */
+
+@media (max-width:1024px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:768px) {
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        background: #f8e0e3;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        padding: 20px 0;
+    }
+
+    #menu-check:checked~.nav .menu {
+        display: flex;
+    }
+
+    .overlay h1 {
+        font-size: 2.3rem;
+    }
+
+}
+
+@media (max-width:500px) {
+
+    .overlay h1 {
+        font-size: 1.8rem;
+    }
+
+    .overlay p {
+        font-size: .9rem;
+    }
+
+    .modalContent img {
+        height: 220px;
+    }
+}
