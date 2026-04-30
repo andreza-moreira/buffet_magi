@@ -1,31 +1,175 @@
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title>Buffet Magi - Home</title>
-        <link href="css/estilo.css" rel="stylesheet"/>
-        <link rel="icon" href="produtos/img/logo.ico" type="image/x-icon">
-    </head>
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-    <body>
-        <header class="header-container">
-            <div class="logo">
-                <span class="logo-bold">Buffet Magi</span>
-                <span class="logo-thin"> ATELIÊ DE DOCES</span>
-            </div>
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="produtos/produto.html">Nossos Produtos</a></li>
-                    <li><a href="sobre/sobre.html">Sobre Nós</a></li>
-                    <li><a href="blog/blog.html">Blog</a></li>
-                    <li><a href="contato/contato.html">Contato</a></li>
-                </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buffet Magi</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav">
+            <h1 class="logo">Buffet Magi</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Produtos</a>
+                <a href="#">Sobre</a>
+                <a href="#">Blog</a>
+                <a href="#">Contato</a>
             </nav>
-        </header>
+        </div>
+    </header>
 
-        <main>
-            <h1>Bem-vindo ao Buffet Magi</h1>
-            <p>Sua estrutura de pastas agora está organizada! Navegue pelo menu para testar os links.</p>
-        </main>
-    </body>
+    <section class="hero">
+        <img src="./img/banner1.png" alt="Banner Buffet Magi">
+
+        <div class="overlay">
+            <h2>Buffet Magi</h2>
+            <p>Ateliê de doces artesanais — criando momentos mágicos</p>
+        </div>
+    </section>
+
+    <!-- ÍCONES -->
+    <section class="icons container">
+        <div class="icon-box">
+            <i class="fa-solid fa-cake-candles"></i>
+            <br>
+            <a href="./bolos.html"><span class="boloNome">Bolos</span></a>
+        </div>
+        <div class="icon-box">
+            <i class="fa-solid fa-cookie"></i>
+            <br>
+            <span>Doces Finos</span>
+        </div>
+        <div class="icon-box">
+            <i class="fa-solid fa-layer-group"></i>
+            <br>
+            <span>Tortas</span>
+        </div>
+        <div class="icon-box">
+            <i class="fa-solid fa-gift"></i>
+            <br>
+            <span>Presentes</span>
+        </div>
+        <div class="icon-box">
+            <i class="fa-solid fa-wine-glass"></i>
+            <br>
+            <span>Bebidas</span>
+        </div>
+        <div class="icon-box">
+            <i class="fa-solid fa-star"></i>
+            <br>
+            <span>Eventos</span>
+        </div>
+    </section>
+
+    <!-- DESTAQUES -->
+    <section class="destaques container">
+        <h2>Nossos Destaques</h2>
+
+        <div class="grid">
+            <div class="card">
+                <img src="./img/produtos/macarons.png">
+                <h3>Macarons</h3>
+                <p>Sabores delicados e sofisticados.</p>
+            </div>
+
+            <div class="card">
+                <img src="./img/produtos/bolo1.png">
+                <h3>Bolos de Casamento</h3>
+                <p>Design exclusivo para seu dia especial.</p>
+            </div>
+
+            <div class="card">
+                <img src="./img/produtos/trufas.png">
+                <h3>Trufas Gourmet</h3>
+                <p>Chocolate premium artesanal.</p>
+            </div>
+
+            <div class="card">
+                <img src="./img/produtos/cupcakes.png">
+                <h3>Cupcakes</h3>
+                <p>Perfeitos para festas e eventos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="sobre container">
+        <div class="sobre-img">
+            <img src="./img/loja.png" alt="Buffet Magi">
+        </div>
+
+        <div class="sobre-texto">
+            <span class="subtitulo">NOSSA HISTÓRIA</span>
+
+            <h2>Tradição e Arte em Cada Doce</h2>
+
+            <p>
+                Desde 2015, o Buffet Magi transforma momentos especiais em memórias inesquecíveis.
+                Nossa paixão pela confeitaria e pelo encanto dos detalhes faz de cada celebração
+                uma experiência única, marcada por sabor, beleza e sofisticação.
+            </p>
+
+            <p>
+                Nosso ateliê combina técnicas tradicionais da confeitaria francesa com ingredientes
+                selecionados, criando doces que encantam tanto pelo sabor quanto pela apresentação.
+                Cada receita é desenvolvida com cuidado para surpreender os convidados e valorizar
+                cada ocasião.
+            </p>
+
+            <p>
+                Cada criação é feita à mão com carinho e dedicação, porque acreditamos que os melhores
+                momentos da vida merecem o melhor sabor.
+            </p>
+
+            <button class="btn-sobre">Saiba Mais</button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <h3>Buffet Magi</h3>
+                <p>Doces artesanais com elegância e sabor único.</p>
+            </div>
+
+            <div>
+                <h4>Navegação</h4>
+                <ul>
+                    <li>Home</li>
+                    <li>Produtos</li>
+                    <li>Sobre</li>
+                    <li>Contato</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Contato</h4>
+                <p>(11) 99999-9999</p>
+                <p>contato@buffetmagi.com</p>
+            </div>
+
+            <div>
+                <h4>Horário</h4>
+                <p>Seg - Sex: 9h às 18h</p>
+                <p>Sábado: 9h às 14h</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Buffet Magi</p>
+        </div>
+    </footer>
+
+</body>
+
 </html>
