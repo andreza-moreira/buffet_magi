@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buffet Magi</title>
+    <link rel="stylesheet" href="css/blog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo">
+            </div>
+
+            <input type="checkbox" id="menu-check">
+            <label for="menu-check" class="menu-icon">☰</label>
+
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Nossos Produtos</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#" class="active">Blog</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+        <img src="img/bannersBlog.png" alt="Banner" class="banner-img">
+    </section>
+
+    <section class="atelie">
+        <h2>Nosso Ateliê</h2>
+        <p class="sub">Conheça os bastidores onde a magia acontece</p>
+        <div class="linha"></div>
+        <div class="cards">
+            <div class="card"><img src="img/atelie1.png" alt=""></div>
+            <div class="card"><img src="img/atelie2.png" alt=""></div>
+            <div class="card"><img src="img/atelie3.png" alt=""></div>
+            <div class="card"><img src="img/atelie4.png" alt=""></div>
+        </div>
+    </section>
+
+    <div class="topo">
+        <h1>Eventos em Destaque</h1>
+        <p>Os momentos mais especiais que ajudamos a criar</p>
+        <div class="linha"></div>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <img src="img/blog1.png">
+            <div class="info">
+                <span class="data">15 de Março, 2026</span>
+                <h3>Evento Gala de Primavera</h3>
+                <p>Uma noite mágica com mais de 500 doces artesanais.</p>
+                <span class="lerMais" onclick="abrirModal(0)">
+                    Ler mais <span class="material-symbols-outlined">arrow_forward</span>
+                </span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/blog2.png">
+            <div class="info">
+                <span class="data">2 de Fevereiro, 2026</span>
+                <h3>Festa Encantada – Sofia</h3>
+                <p>Festa com tema unicórnio e doces personalizados.</p>
+                <span class="lerMais" onclick="abrirModal(1)">
+                    Ler mais <span class="material-symbols-outlined">arrow_forward</span>
+                </span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/blog3.png">
+            <div class="info">
+                <span class="data">20 de Janeiro, 2026</span>
+                <h3>Casamento Ana & Pedro</h3>
+                <p>Casamento romântico com mesa completa de doces.</p>
+                <span class="lerMais" onclick="abrirModal(2)">
+                    Ler mais <span class="material-symbols-outlined">arrow_forward</span>
+                </span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/blog4.png">
+            <div class="info">
+                <span class="data">8 de Dezembro, 2025</span>
+                <h3>Coffee Break TechCorp</h3>
+                <p>Coffee break sofisticado para 200 convidados.</p>
+                <span class="lerMais" onclick="abrirModal(3)">
+                    Ler mais <span class="material-symbols-outlined">arrow_forward</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modalContent">
+            <div class="voltar" onclick="fecharModal()">
+                <span class="material-symbols-outlined">arrow_back</span>
+            </div>
+            <img id="modalImg">
+            <div class="modalText">
+                <h2 id="modalTitulo"></h2>
+                <p id="modalDesc"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/blog.js"></script>
+</body>
+</html>
