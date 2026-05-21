@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.boloNome {
+    color: #333;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #faf7f8;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* HEADER */
+header {
+    background: #fff;
+    padding: 15px 0;
+    position: relative;
+    z-index: 10;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display';
+    color: #c96b84;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #555;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: #c96b84;
+}
+
+/* HERO */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.overlay {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.45);
+    padding: 40px 50px;
+    border-radius: 12px;
+    max-width: 700px;
+}
+
+.overlay h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 18px;
+}
+
+/* ICONES */
+.icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+    flex-wrap: wrap;
+}
+
+.icon-box {
+    text-align: center;
+    flex: 1 1 120px;
+    margin: 10px;
+}
+
+.icon-box i {
+    background: #f7dce3;
+    color: #c96b84;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.icon-box i:hover {
+    background: #fbeaf0;
+    color: #d97f98;
+    transform: translateY(-4px);
+}
+
+/* DESTAQUES */
+.destaques h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+/* SOBRE */
+.sobre {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 60px auto;
+}
+
+.sobre img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.sobre-texto button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background: #c96b84;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    background: #f8eef2;
+    color: #7d6b72;
+    margin-top: 50px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 50px 0;
+    gap: 30px;
+}
+
+footer h3,
+footer h4 {
+    color: #4a343c;
+    margin-bottom: 15px;
+    font-family: 'Playfair Display';
+}
+
+footer p,
+footer li {
+    line-height: 1.8;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+footer li:hover {
+    color: #c96b84;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 18px;
+    border-top: 1px solid #ead8de;
+    color: #9b7d87;
+    font-size: 14px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sobre {
+        flex-direction: column;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .overlay h2 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 500px) {
+    nav {
+        display: none;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero {
+        height: 380px;
+    }
+
+    .overlay {
+        padding: 25px;
+        width: 90%;
+    }
+
+    .overlay h2 {
+        font-size: 28px;
+    }
+
+    .overlay p {
+        font-size: 15px;
+    }
+}
