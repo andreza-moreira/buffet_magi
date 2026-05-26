@@ -1,71 +1,58 @@
 <html>
+    <head>
+        <!-- Titulo -->
+        <title>Buffet Magi - Nossos Produtos</title>
 
-<head>
-    <!-- Titulo -->
-    <title>Buffet Magi - Nossos Produtos</title>
+        <!-- Carregando os arquivos CSS -->
+        <link href="bebidas.css" rel="stylesheet"/>
 
-    <!-- Carregando os arquivos CSS -->
-    <link href="produto.css" rel="stylesheet" />
+        <!-- Adicionado Ícone -->
+        <link rel="icon" href="../img/logo.ico" type="image/x-icon">
 
-    <!-- Adicionado Ícone -->
-    <link rel="icon" href="../img/logo.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    </head>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-</head>
+    <body>
 
-<body>
-
-    <header class="header">
-        <div class="container">
+        <header class="header-container">
             <div class="logo">
-                <img src="../blog/img/logo.png" alt="Logo">
+                <span class="logo-bold">Buffet Magi</span>
+                <span class="logo-thin"> ATELIÊ DE DOCES</span>
             </div>
-
-            <input type="checkbox" id="menu-check">
-            <label for="menu-check" class="menu-icon">☰</label>
-
             <nav class="nav">
-                <ul class="menu">
+                <ul>
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="produtos/produto.html" class="active">Nossos Produtos</a></li>
+                    <li><a href="produto.html" class="active">Nossos Produtos</a></li> 
                     <li><a href="../sobre/sobre.html">Sobre Nós</a></li>
                     <li><a href="../blog/blog.html">Blog</a></li>
                     <li><a href="../contato/contato.html">Contato</a></li>
-
                 </ul>
             </nav>
-        </div>
-    </header>
+        </header>
 
-    <section class="hero-section">
-        <div class="hero-content">
-            <h1>Nossos Produtos</h1>
-            <p>Doces artesanais feitos com amor e ingredientes selecionados</p>
-        </div>
-    </section>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Nossas Bebidas</h1>
+                <p>Bebidas artesanais feitas com amor e ingredientes selecionados</p>
+            </div>
+        </section>
 
-    <section class="catalogo-container">
-        <div class="catalogo-header">
-            <h2>Catálogo</h2>
-            <p>Explore nossas criações artesanais</p>
-            <span class="linha-decorativa"></span>
-        </div>
+        <section class="catalogo-container">
+            <div class="catalogo-header">
+                <h2>Catálogo</h2>
+                <p>Explore nossas criações artesanais</p>
+                <span class="linha-decorativa"></span>
+            </div>
 
-        <div class="filtros-categoria">
-            <button class="btn-filtro active">Todos</button>
-            <button class="btn-filtro">Bolos</button>
-            <button class="btn-filtro">Doces Finos</button>
-            <button class="btn-filtro">Tortas</button>
-            <button class="btn-filtro">Bem-Casados</button>
-            <button class="btn-filtro">Cupcakes</button>
-            <button class="btn-filtro">Brigadeiros</button>
-        </div>
+            <div class="filtros-categoria">
+                <button class="btn-filtro active">Todos</button>
+                <button class="btn-filtro">Quentes</button>
+                <button class="btn-filtro">Frias</button>
+            </div>
 
-        <div class="produtos-grid">
-
+            <div class="produtos-grid">
+                
             <!-- BEM CASADOS -->
             <div class="produto-card bem-casados">
                 <div class="produto-imagem">
@@ -216,12 +203,12 @@
                 </div>
             </div>
 
-        </div>
+            </div>
 
 
-    </section>
+        </section>        
 
-    <!-- FOOTER -->
+           <!-- FOOTER -->
     <footer>
         <div class="container footer-grid">
 
@@ -299,6 +286,7 @@
             <p>© 2026 Buffet Magi — Feito com ♡ e muito açúcar</p>
         </div>
     </footer>
-</body>
+
+    </body>
 
 </html>

@@ -8,7 +8,7 @@
 
     <!-- Adicionado Ícone -->
     <link rel="icon" href="../img/logo.ico" type="image/x-icon">
-    
+
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap"
         rel="stylesheet">
@@ -18,15 +18,24 @@
 
 <body>
 
-    <header>
-        <div class="container nav">
-            <h1 class="logo">Buffet Magi</h1>
-            <nav>
-                <a href=".index.html">Home</a>
-                <a href="produtos/produto.html">Produtos</a>
-                <a href="./sobre/sobre.html">Sobre</a>
-                <a href="./blog/blog.html">Blog</a>
-                <a href="contato/contato.html">Contato</a>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="blog/img/logo.png" alt="Logo">
+            </div>
+
+            <input type="checkbox" id="menu-check">
+            <label for="menu-check" class="menu-icon">☰</label>
+
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="produtos/produto.html">Nossos Produtos</a></li>
+                    <li><a href="sobre/sobre.html">Sobre Nós</a></li>
+                    <li><a href="blog/blog.html">Blog</a></li>
+                    <li><a href="contato/contato.html">Contato</a></li>
+
+                </ul>
             </nav>
         </div>
     </header>
@@ -42,36 +51,38 @@
 
     <!-- ÍCONES -->
     <section class="icons container">
-        <div class="icon-box">
+
+        <!-- <div class="icon-box">
             <i class="fa-solid fa-cake-candles"></i>
             <br>
             <a href="./bolos.html"><span class="boloNome">Bolos</span></a>
-        </div>
-        <div class="icon-box">
-            <i class="fa-solid fa-cookie"></i>
-            <br>
-            <span>Doces Finos</span>
-        </div>
-        <div class="icon-box">
-            <i class="fa-solid fa-layer-group"></i>
-            <br>
-            <span>Tortas</span>
-        </div>
+        </div> -->
+
         <div class="icon-box">
             <i class="fa-solid fa-gift"></i>
             <br>
-            <span>Presentes</span>
+            <a href="./blog/blog.html"> <span>Presentes</span></a>
+
         </div>
+
+        <div class="icon-box">
+            <i class="fa-solid fa-cookie"></i>
+            <br>
+            <a href="./produtos/produto.html"> <span>Catálogo</span></a>
+        </div>
+
         <div class="icon-box">
             <i class="fa-solid fa-wine-glass"></i>
             <br>
-            <span>Bebidas</span>
+            <a href="./produtos/bebidas.html"> <span>Bebidas</span></a>
         </div>
+
         <div class="icon-box">
-            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-location-dot"></i>
             <br>
-            <span>Eventos</span>
+            <a href="./contato/contato.html"><span>Eventos</span></a>
         </div>
+
     </section>
 
     <!-- DESTAQUES -->
@@ -113,9 +124,10 @@
 
         <div class="sobre-texto">
             <span class="subtitulo">NOSSA HISTÓRIA</span>
+            <br><br>
 
             <h2>Tradição e Arte em Cada Doce</h2>
-
+            <br>
             <p>
                 Desde 2015, o Buffet Magi transforma momentos especiais em memórias inesquecíveis.
                 Nossa paixão pela confeitaria e pelo encanto dos detalhes faz de cada celebração
@@ -134,43 +146,86 @@
                 momentos da vida merecem o melhor sabor.
             </p>
 
-            <button class="btn-sobre">Saiba Mais</button>
+            <button class="btn-sobre"> <a class="texto-a" href="./sobre/sobre.html">Saiba Mais</a> </button>
         </div>
     </section>
 
     <!-- FOOTER -->
     <footer>
         <div class="container footer-grid">
-            <div>
-                <h3>Buffet Magi</h3>
-                <p>Doces artesanais com elegância e sabor único.</p>
+
+            <div class="footer-brand">
+                <img src="./img/logo2.png" alt="Logo Buffet Magi" class="footer-logo">
+
+                <div class="footer-brand-content">
+
+                    <p>
+                        Ateliê de doces artesanais, criando momentos mágicos através
+                        de sabores únicos e apresentações sofisticadas.
+                    </p>
+
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a
+                            href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Dpt_BR">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </div>
+
+                </div>
             </div>
 
             <div>
                 <h4>Navegação</h4>
+
                 <ul>
-                    <li>Home</li>
-                    <li>Produtos</li>
-                    <li>Sobre</li>
-                    <li>Contato</li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="././produtos/produto.html">Nossos Produtos</a></li>
+                    <li><a href="./sobre/sobre.html">Sobre Nós</a></li>
+                    <li><a href="./blog/blog.html">Blog</a></li>
+                    <li><a href="./contato/contato.html">Contato</a></li>
                 </ul>
             </div>
 
             <div>
                 <h4>Contato</h4>
-                <p>(11) 99999-9999</p>
-                <p>contato@buffetmagi.com</p>
+
+                <div class="footer-contact">
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                        (11) 98765-4321
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-envelope"></i>
+                        contato@buffetmagi.com.br
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Rua Petit Four, 312 - Jardim Paris
+                        São Caetano do Sul - SP
+                        CEP: 09540-180
+                    </p>
+                </div>
             </div>
 
             <div>
                 <h4>Horário</h4>
-                <p>Seg - Sex: 9h às 18h</p>
-                <p>Sábado: 9h às 14h</p>
+
+                <div class="footer-hours">
+                    <p>Seg - Sex: 9h às 18h</p>
+                    <p>Sábado: 9h às 14h</p>
+                    <p>Domingo: Fechado</p>
+                </div>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <p>© 2026 Buffet Magi</p>
+            <p>© 2026 Buffet Magi — Feito com ♡ e muito açúcar</p>
         </div>
     </footer>
 
