@@ -1,35 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Buffet Magi - Sobre Nós</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="sobre.css">
-
-    <!-- Ícones -->
-    <link rel="icon" href="./img/logo.ico" type="image/x-icon">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="sobre.css" rel="stylesheet">
+    <link rel="icon" href="../img/logo.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
-
-    <!-- HEADER -->
     <header class="header">
-
         <div class="container nav-container">
-
             <div class="logo">
-                <h1>Buffet Magi</h1>
-                <span>ATELIÊ DE DOCES</span>
+                <img src="../blog/img/logo.png" alt="Logo Buffet Magi">
             </div>
 
-            <nav>
+            <input type="checkbox" id="menu-check">
+            <label for="menu-check" class="menu-icon">☰</label>
+
+            <nav class="nav">
                 <ul class="menu">
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../produtos/produto.html">Nossos Produtos</a></li>
@@ -38,77 +32,53 @@
                     <li><a href="../contato/contato.html">Contato</a></li>
                 </ul>
             </nav>
-
         </div>
-
     </header>
 
-    <!-- HERO -->
     <section class="hero">
-
+        <img src="img/bannersobre.png" alt="Banner Buffet Magi">
         <div class="overlay"></div>
-
-        <img src="./img/banner.png" alt="Banner Buffet Magi">
 
         <div class="hero-content">
             <h2>Sobre Nós</h2>
             <p>Conheça a história por trás de cada doce mágico</p>
         </div>
-
     </section>
 
-    <!-- NOSSA HISTÓRIA -->
     <section class="historia">
-
         <div class="container">
-
             <div class="section-title">
                 <h2>Nossa História</h2>
                 <div class="line"></div>
             </div>
 
             <div class="historia-content">
-
                 <div class="historia-img">
-                    <img src="./img/loja.png" alt="Loja Buffet Magi">
+                    <img src="img/bannersobre.png" alt="Loja Buffet Magi">
                 </div>
 
                 <div class="historia-texto">
-
                     <p>
-                        O Buffet Magi nasceu em 2015, fruto do sonho de transformar a arte da confeitaria em
-                        experiências memoráveis.
+                        O Buffet Magi nasceu em 2015 de um sonho simples e poderoso: transformar a confeitaria em arte e a arte em memórias afetivas.
+                        Tudo começou em uma pequena cozinha, onde cada receita era criada com paixão e dedicação.
                     </p>
 
                     <p>
-                        Tudo começou em uma pequena cozinha, onde a paixão por doces artesanais se tornava realidade a
-                        cada receita.
+                        Ao longo dos anos, desenvolvemos uma identidade única: a de um ateliê que conta histórias através dos doces.
+                        Cada bolo decorado carrega um significado. Cada macaron esconde um detalhe cuidado. Cada brigadeiro gourmet revela o carinho de quem faz com amor.
                     </p>
 
                     <p>
-                        Ao longo dos anos, nos especializamos em criar doces que contam histórias.
-                        Cada bolo decorado, cada macaron perfeito e cada brigadeiro gourmet carrega a essência do nosso
-                        ateliê.
+                        Hoje, estamos presentes nos momentos que importam: casamentos inesquecíveis, festas corporativas elegantes, aniversários especiais e eventos sociais marcantes.
+                        Em cada entrega, o mesmo compromisso que nos define desde o início: qualidade, criatividade e atenção a cada detalhe.
                     </p>
-
-                    <p>
-                        Hoje, atendemos casamentos, festas corporativas, aniversários e eventos sociais,
-                        sempre com o mesmo carinho e atenção aos detalhes.
-                    </p>
-
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
-    <!-- VALORES -->
     <section class="valores">
-
         <div class="container">
-
             <div class="section-title">
                 <h2>Nossos Valores</h2>
                 <p>O que nos guia em cada criação</p>
@@ -116,61 +86,44 @@
             </div>
 
             <div class="cards">
-
                 <div class="card">
                     <i class="fa-regular fa-heart"></i>
                     <h3>Paixão</h3>
-                    <p>
-                        Cada doce é feito com amor e dedicação.
-                    </p>
+                    <p>Cada doce é feito com amor e dedicação.</p>
                 </div>
 
                 <div class="card">
                     <i class="fa-solid fa-award"></i>
                     <h3>Qualidade</h3>
-                    <p>
-                        Ingredientes premium e acabamento impecável.
-                    </p>
+                    <p>Ingredientes premium e acabamento impecável.</p>
                 </div>
 
                 <div class="card">
                     <i class="fa-solid fa-users"></i>
                     <h3>Atendimento</h3>
-                    <p>
-                        Atendimento personalizado para cada cliente.
-                    </p>
+                    <p>Atendimento personalizado para cada cliente.</p>
                 </div>
 
                 <div class="card">
                     <i class="fa-regular fa-clock"></i>
                     <h3>Pontualidade</h3>
-                    <p>
-                        Compromisso com prazos e excelência.
-                    </p>
+                    <p>Compromisso com prazos e excelência.</p>
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
-    <!-- MISSÃO -->
     <section class="missao">
-
         <div class="container">
-
             <div class="section-title">
                 <h2>Nossa Missão</h2>
                 <div class="line"></div>
             </div>
 
             <div class="missao-cards">
-
                 <div class="missao-card">
-                    <i class="fa-regular fa-bullseye"></i>
+                    <i class="fa-solid fa-bullseye"></i>
                     <h3>Missão</h3>
-
                     <p>
                         Transformar celebrações em momentos inesquecíveis através
                         de doces artesanais que encantam pelo sabor e beleza.
@@ -180,44 +133,35 @@
                 <div class="missao-card">
                     <i class="fa-regular fa-eye"></i>
                     <h3>Visão</h3>
-
                     <p>
                         Ser referência em confeitaria artesanal,
                         reconhecida pela excelência e inovação.
                     </p>
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
-    <!-- FOOTER -->
     <footer>
         <div class="container footer-grid">
-
             <div class="footer-brand">
                 <img src="../img/logo2.png" alt="Logo Buffet Magi" class="footer-logo">
 
                 <div class="footer-brand-content">
-
                     <p>
                         Ateliê de doces artesanais, criando momentos mágicos através
                         de sabores únicos e apresentações sofisticadas.
                     </p>
 
                     <div class="footer-social">
-                        <a href="https://www.instagram.com/">
+                        <a href="https://www.instagram.com/" aria-label="Instagram">
                             <i class="fa-brands fa-instagram"></i>
                         </a>
 
-                        <a
-                            href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Dpt_BR">
+                        <a href="https://www.facebook.com/" aria-label="Facebook">
                             <i class="fa-brands fa-facebook-f"></i>
                         </a>
                     </div>
-
                 </div>
             </div>
 
@@ -225,11 +169,11 @@
                 <h4>Navegação</h4>
 
                 <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="././produtos/produto.html">Nossos Produtos</a></li>
-                    <li><a href="./sobre/sobre.html">Sobre Nós</a></li>
-                    <li><a href="./blog/blog.html">Blog</a></li>
-                    <li><a href="./contato/contato.html">Contato</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../produtos/produto.html">Nossos Produtos</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="../blog/blog.html">Blog</a></li>
+                    <li><a href="../contato/contato.html">Contato</a></li>
                 </ul>
             </div>
 
@@ -268,10 +212,9 @@
         </div>
 
         <div class="footer-bottom">
-            <p>© 2026 Buffet Magi — Feito com ♡ e muito açúcar</p>
+            <p>© 2026 Buffet Magi - Feito com amor e muito açúcar</p>
         </div>
     </footer>
-
 </body>
 
 </html>
