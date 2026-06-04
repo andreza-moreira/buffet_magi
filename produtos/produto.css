@@ -502,3 +502,7 @@ footer li a:hover {
 .overlay p {
     font-size: 18px;
 }
+
+.produto-card {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
