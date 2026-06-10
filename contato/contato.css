@@ -3,11 +3,23 @@
    ========================================== */
 
 
-body, p, a, li, input, textarea, select, button {
+body,
+p,
+a,
+li,
+input,
+textarea,
+select,
+button {
     font-family: 'Poppins', sans-serif !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Playfair Display', serif !important;
 }
 
@@ -42,15 +54,14 @@ h3 {
 
 
 /* CONTAINER DO FORMULÁRIO (Mantido o do meio por ser único com este escopo) */
-.container {
+.contato-container {
     width: 90%;
     max-width: 1200px;
-    margin: 60px auto;
+    margin: 100px auto 60px;
     display: flex;
     gap: 40px;
     flex-wrap: wrap;
 }
-
 
 /* FORMULÁRIO */
 .formulario {
@@ -88,7 +99,7 @@ h3 {
     border: 1px solid #ccc;
     border-radius: 6px;
     /* FONTE DO ARQUIVO ANEXO JÁ EXISTENTE MANTIDA */
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppins', sans-serif;
 }
 
 button {
@@ -102,7 +113,7 @@ button {
     cursor: pointer;
     transition: 0.3s;
     /* FONTE DO ARQUIVO ANEXO JÁ EXISTENTE MANTIDA */
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppins', sans-serif;
 }
 
 button:hover {
@@ -185,14 +196,24 @@ footer {
     color: #7d6b72;
     margin-top: 80px;
     overflow: hidden;
+    width: 100%;
+}
+
+footer .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .footer-grid {
+    width: 100%;
     display: grid;
     grid-template-columns: 1.8fr 1fr 1.2fr 1fr;
     gap: 80px;
     padding: 70px 0 50px;
     align-items: flex-start;
+    box-sizing: border-box;
 }
 
 .footer-brand {
@@ -219,8 +240,7 @@ footer {
 footer h4 {
     color: #4a343c;
     margin-bottom: 22px;
-    /* FONTE DO ARQUIVO ANEXO JÁ EXISTENTE MANTIDA */
-    font-family: 'Playfair Display'; 
+    font-family: 'Playfair Display', serif;
     font-size: 30px;
 }
 
@@ -231,12 +251,13 @@ footer a {
     line-height: 2;
     color: #7d6b72;
     text-decoration: none;
-    /* FONTE DO ARQUIVO ANEXO APLICADA ABAIXO */
     font-family: 'Poppins', sans-serif;
 }
 
 footer ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 footer li {
@@ -273,7 +294,7 @@ footer li a:hover {
 
 .footer-social a:hover {
     background: #c96b84;
-    color: white;
+    color: #fff;
     transform: translateY(-4px);
 }
 
@@ -293,8 +314,6 @@ footer li a:hover {
 
 .footer-hours p {
     margin-bottom: 8px;
-    /* FONTE DO ARQUIVO ANEXO APLICADA ABAIXO */
-    font-family: 'Poppins', sans-serif;
 }
 
 .footer-bottom {
@@ -303,8 +322,6 @@ footer li a:hover {
     padding: 22px;
     color: #9b7d87;
     font-size: 14px;
-    /* FONTE DO ARQUIVO ANEXO APLICADA ABAIXO */
-    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -461,7 +478,7 @@ a {
 
 body {
     /* FONTE DO ARQUIVO ANEXO JÁ EXISTENTE MANTIDA */
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppins', sans-serif;
     background: #faf7f8;
     color: #333;
 }
@@ -475,13 +492,16 @@ body {
     display: block;
 }
 
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .logo img {
